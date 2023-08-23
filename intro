@@ -1,0 +1,13 @@
+I. INTRODUCTION
+In the domain of disaster management, Taiwan has to be particularly robust in the fact that 73% of its citizens are subject to natural disasters(world bank, 2005). 
+Typhoons, floods, and earthquake all affect Taiwan and out of them, earthquakes are most difficult to prepare for as there is little to no warning as when 
+and where it would strike. The most recent major earthquake in Taiwan is the 2022 Taitung earthquakes and 2016 southern Taiwan earthquake, 
+which shook the island terribly. To address this issue, this research focuses on the preparedness and response section of disaster management, 
+in which due to the randomness of the problem the latter requires stochastic programming methods to solve. Oksuz and Satoglu (2019) 
+have done research on the two-stage stochastic model to solve the problem of medical supply allocation. 
+However, it does not engage on the transportation issue of post disaster road networks. 
+Yin, Yang, Yu, Wang, and Cheng (2023) analyzes the transportation side of the problem with trucks and drones, 
+which deals with the issue of broken road network, but the resource allocation side is not solved. 
+For this paper, it focuses on the problem of medical and transportation resource allocation with two-stage stochastic model 
+and then solves it using simulation. Overall, it concludes that using drone in tandem with trucks can be a viable solution 
+for transporting medical supplies to earthquake victims. 
