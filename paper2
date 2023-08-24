@@ -1,0 +1,35 @@
+Mathematical Model
+ 
+In order to solve the problem, a two-stage mathematical model is formulated, and we explore how each of the requirements are translated into constraints. 
+(sets, variables, and parameters)
+The sets denote the areas in this study, the types of resources to be prepared, and the scenarios. Each scenario in the set corresponds to a set of random variables to be utilized in 
+the second stage. The key variables are whether to open a gathering point and if so how much resource to allocate. The second stage variable relate to the optimal solution of each 
+scenario. The parameters are about the cost of each resource and the capacities of each section. 
+(stage one)
+First stage model is based on the preparation phase. The objective expression (1) would be cost of allocating resources and then the second stage cost. Key constraints (2), (3), and (4) 
+are capacity of each resource stored at every gathering point if open and hospital. 
+(stage two)
+The second stage relates to the response phase so it can only be done once the disaster happens and the random variables are set. The objective (7) is to minimize the total 
+deprivation cost and transport cost with the resources available from the stage one. The constraint (8) restricts the vehicles number to be used and (9) restricts the medical resource. 
+Constraint (10) is the capacity of each arc from hospital to disaster area. The number of vehicles allocated to the arc increases the capacity and the worse the road network condition, 
+causing increased travel time, would decrease it. The goal here is to get all the resource to those in need right at the capacity for all scenarios.
+
+Case Study
+An implementation of this model is done on Tainan, Taiwan, and by simulation optimization, we can generate a solution of minimizing the total economic cost of earthquakes. For this 
+case, we consider two medical resources, antibiotics and bandages, and two transportation vehicles, trucks and drones. The gathering points are selected at universities with large area 
+and spacious open air sport area to accommodate the surge of vehicle post disaster. The medical resources are stockpiled at hospitals are they already use those and have an 
+understanding on how to store them. The simulation optimization done for this case is to solve the problem heuristically through the genetic algorithm, which generates initial solutions by 
+random and then runs through a number of samples of different scenarios. Of the scenarios, values for the PGD and number of victims are generated through the TERIA system from 
+NCDR. The number of samples generated are determined through the Optimal Computing Budget Allocation (OCBA) algorithm, which can minimize the amount of sampling done for a given probability of correct choice. 
+Results can be seen in picture 3, as it shows the amounts of vehicles allocated to each gathering point through simulation optimization. The gathering points further from each other and more remote tend to require more vehicles.
+
+Note on the TERIA, requires reference.
+Note on OCBA, reference also.
+
+Conclusion
+Optimizing the allocation of both medical and transportation resource in preparation of earthquakes is shown to be possible and can be defined as a two-stage stochastic model. 
+The model could then be solved by applying simulation optimization methods and from here we have shown it done on Tainan, Taiwan. The possibility of novel transportation methods 
+such as drones are recognized and can be applied to future planning of disaster preparedness. 
+For further research,this method can be brought to other fields, such as allocating boats or rafts for transportation in case of floods as drones may not be viable due to weather. It can also encompass more by bring routing methods 
+into consideration and/or the weather condition into the transport times of drones. For the vehicle travel time, better accuracy can be attained by simulating the changes in road speed by not knowing which roads are broken 
+and have to discovered by going over them. May this research bring better results to disaster management in the future.
