@@ -1,0 +1,13 @@
+Problem Statement 
+
+ 
+The aim of this research is to solve the problem of how to allocate medical and transportation 
+resources so that the total economic cost of earthquakes is minimized. Of which, it is divided into two main sections,
+pre-disaster allocation cost, and the post disaster deprivation and 
+transport cost. The interaction between the two can be seen clearly by the picture 1.
+The two sections correspond to the preparation and response phase of disaster management 
+respectively. Then, for the post disaster section, there would be a three-tier transport being the transportation vehicle gathering points,
+the hospitals, and the disaster areas. From picture 
+2, upon disaster all the transportation vehicles would be called to gathering points, which then be sent to hospitals to pick up medical resources and finally sent them to disaster areas. Of 
+the transportation vehicles, they are further divided into trucks and drones, with drones independent of the road network. With the given situation, this research can now formulate 
+the mathematical model and conduct simulation optimization. 
