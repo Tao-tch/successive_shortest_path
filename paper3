@@ -1,0 +1,71 @@
+Combined 
+Problem Statement 
+The aim is to allocate medical and transportation resources in a way which minimizes the total economic cost of earthquakes. 
+ It is divided into pre-disaster allocation and the post disaster deprivation and transport cost as shown in Fig. 1.
+The sections correspond to the preparedness and response phase of disaster management respectively. 
+The response phase involves a three-tier network of the vehicle gathering points, the hospitals, and the disaster areas. 
+ Upon disaster, transportation vehicles would gather at designated points, proceed to hospitals to collect medical resources, 
+and finally travel to disaster areas, shown in Fig. 2. There are two types of vehicles, trucks and drones, whereas drones are less affect by earthquakes. 
+With the situation defined, the mathematical model can be formulated, and simulation optimization conducted.
+
+Mathematical Model
+To solve the problem, a two-stage mathematical model is used which explores the design of each constraint.
+ 
+(sets, variables, and parameters)
+
+The sets represent locations, resource types, and scenarios, with each scenario having a corresponding set of random 
+variables. The decision variables are opening gathering points and allocating resources. Second stage variables relate to the optimal scenario solution, while 
+parameters involve resource costs and capacities. 
+
+(stage one)
+Stage one of the model is the preparation phase. 
+The objective expression (1) is the cost of resources and the result of stage two. Constraints (2), (3), and (4) are the 
+capacities of resources stored at gathering points and hospitals. 
+
+(stage two)
+
+Stage two relates to the response phase, so the random variables are now known. 
+The objective (7) is minimizing the total deprivation and transport costs with the available resources. 
+Constraints (8) and (9) restrict the resources based on stage one. Constraint (10) is the capacity of each arc from hospital to disaster area. 
+The more the vehicles are allocated to each arc the more the capacity increases and the opposite happens for quality of the road network condition, the worse the less. 
+ Purpose of this stage is to minimize the total economic cost for given scenario.
+
+Case Study
+An implementation of this is done on Tainan, Taiwan, and by simulation optimization, we can generate an allocation minimizing the total economic cost. 
+ Here, two types of medical resources are examined, antibiotics and bandages, and two types of transportation vehicles, trucks and drones. 
+ Gathering points are areas with enough space to accommodate vehicles post disaster. Medical resources are stockpiled at hospitals as they have the expertise.
+Simulation optimization is done with heuristic methods using the genetic algorithm. Of the scenarios, values for travel time and victim count are generated through the TERIA system from NCDR. 
+The number of scenarios required are determined through the Optimal Computing Budget Allocation (OCBA) algorithm, which reduces the total computation time. 
+Results are in picture 3, as it shows the amounts of vehicles allocated. The gathering points further from each other and more remote tend to require more.
+
+Conclusion
+Optimizing the allocation of both medical and transportation resource in preparation of earthquakes is shown possible and defined as a two-stage stochastic model. 
+Applying simulation optimization methods can solve it, and here it is done on Tainan, Taiwan. 
+The possibility of novel transportation methods such as drones are recognized and be applied to the future of disaster management. 
+This method can consider other vehicles, such as boats or rafts in case of floods as drones may not be viable.
+ It can also encompass more by considering the routing problem and have the weather condition effect drone travel time. 
+ May this research bring better results to disaster management in the future.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
